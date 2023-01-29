@@ -1,0 +1,44 @@
+.c-section--services {
+    padding: 0 0 4.375em;
+
+    @include mq(md) {
+        padding: 0 0 7em;
+
+    }
+}
+
+.c-services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5em 1.5em;
+    cursor: default;
+}
+
+.c-services__link {
+    flex-basis: 31%;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+
+    span {
+        background: var(--color-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-left: 1em;
+
+        svg {
+            height: 64px;
+            width: auto;
+        }
+    }
+}
+

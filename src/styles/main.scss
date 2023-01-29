@@ -1,0 +1,47 @@
+// TOOLS
+@import '../../node_modules/normalize.css/normalize';
+@import 'tools/_mq';
+@import 'tools/tools.aliases';
+
+// SETTINGS
+@import 'settings/_settings.global';
+@import 'settings/_mq';
+@import 'settings/_fonts.scss';
+
+// ELEMENTS
+@import 'elements/_var.scss';
+@import 'elements/_ie.scss';
+@import 'elements/_defaults.scss';
+@import 'elements/_misc.scss';
+
+// OBJECTS
+//
+@import 'objects/_row.scss';
+@import 'objects/_section.scss';
+
+// COMPONENTS
+//
+// Build and include your project’s UI components here.
+//----------------------------------*\
+// Components
+//----------------------------------*/
+@import 'components/_section.scss';
+@import 'components/_button.scss';
+@import 'components/_link.scss';
+@import 'components/_welcome.scss';
+@import 'components/_slider.scss';
+@import 'components/_about.scss';
+@import 'components/_project.scss';
+@import 'components/_service.scss';
+@import 'components/_event.scss';
+@import 'components/_blog.scss';
+@import 'components/_contact.scss';
+@import 'components/_client.scss';
+@import 'components/_hero.scss';
+
+// PARTIALS
+@import 'partials/_header.scss';
+@import 'partials/_footer.scss';
+
+// UTILITIES
+@import 'utilities/_flex.scss';

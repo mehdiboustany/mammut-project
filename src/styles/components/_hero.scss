@@ -1,0 +1,22 @@
+.c-section--hero {
+    min-height: 65vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: var(--color-bg-02);
+    }
+}
+
+.c-hero__title {
+    margin: 0;
+    @include font-size(34px, 1.5);
+    color: var(--color-white);
+    position: relative;
+    z-index: 1;
+}

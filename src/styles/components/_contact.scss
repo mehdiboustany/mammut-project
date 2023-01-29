@@ -1,0 +1,131 @@
+.c-section--contact {
+    padding: 0 0 4.375em;
+
+    @include mq(md) {
+        padding: 0 0 7em;
+    }
+}
+
+.c-contact__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10em;
+}
+
+.c-contact__col {
+    max-width: 30em;
+    width: 100%;
+}
+
+.c-contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.425em;
+        width: 100%;
+
+        label {
+            @include font-size(14px, 1.5);
+        }
+
+        input {
+            margin-bottom: 1em;
+            border: 0;
+            background: var(--color-white);
+            height: 42px;
+            padding: 1em;
+            color: var(--color-primary);
+            font-weight: 300;
+            outline: none;
+            @include font-size(14px, 1.5);
+        }
+
+        button {
+            border: 0;
+            background: var(--color-primary);
+            height: 42px;
+            color: var(--color-white);
+            cursor: pointer;
+        }
+    }
+}
+
+.c-contact__title {
+    @include font-size(24px, 1.5);
+    font-weight: 700;
+}
+
+.c-contact__text {
+    @include font-size(16px, 1.6);
+    text-align: justify;
+}
+
+.c-contact__call {
+    @include font-size(15px, 1.5);
+    text-align: justify;
+    border-bottom: 1px solid var(--color-primary);
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: var(--color-primary);
+        position: absolute;
+        left: 0;
+        bottom: -7px;
+    }
+}
+
+.c-contact__call-title {
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    margin: 1em 0 0;
+
+    span {
+        background-color: var(--color-gray);
+        padding-left: 0.5em;
+        position: relative;
+    }
+
+    &::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: var(--color-primary);
+        display: inline-block;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-primary);
+        display: block;
+        position: absolute;
+        top: 14px;
+        z-index: -1;
+    }
+}
+
+.c-contact__cta {
+    margin-top: 0.5em;
+    display: inline-block;
+    background: var(--color-primary);
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 0.625em 2em;
+    transition: all .25s linear;
+
+    &:hover {
+        background: var(--color-secondary);
+    }
+}

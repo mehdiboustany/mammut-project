@@ -1,0 +1,13 @@
+.c-section__about {
+    padding: 4.375em 0;
+
+    @include mq(md) {
+        padding: 7em 0;
+    }
+}
+
+.c-about__text {
+    @include mq(md) {
+        padding: 0 6vw;
+    }
+}

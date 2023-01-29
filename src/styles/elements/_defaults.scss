@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: $vazir;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  color: var(--color-text);
+  background: var(--color-gray);
+}
+
+html{
+  &.is-fixed {
+    overflow: hidden;
+    height: 100%;
+  }
+}

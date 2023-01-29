@@ -1,0 +1,17 @@
+.o-section {
+  padding: 3.125em 0;
+
+  @include mq(desktop) {
+    padding: 4.375em 0;
+  }
+}
+
+.o-section__wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1em;
+
+  @include mq(lg) {
+    max-width: calc(1275px - 2em);
+  }
+}

@@ -1,0 +1,32 @@
+.c-section--client {
+    padding: 0 0 4.375em;
+
+    @include mq(md) {
+        padding: 0 0 7em;
+    }
+}
+
+.c-client__logos {
+    .c-client__item {
+        width: 15%;
+        height: 90px;
+        text-align: center;
+        margin-right: 1em;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .flickity-slider {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.c-client__logos {
+    padding: 1em 0;
+}
